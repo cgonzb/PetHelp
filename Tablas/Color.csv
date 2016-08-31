@@ -1,0 +1,9 @@
+idColor,Nombre,Ultima_Mod
+1,negro/cafe,NOW()
+2,atigrado cafe,NOW()
+3,blanco/negro,NOW()
+4,blanco/cafe,NOW()
+5,blanco/negro/cafe,NOW()
+6,cafe,NOW()
+7,negro,NOW()
+8,gris,NOW()

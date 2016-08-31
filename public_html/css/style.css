@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2016, 7:20:53 PM
+    Author     : Cesar
+*/
+
+.brand-logo{
+    text-align: left;
+    font-family: OpenSans;
+    font-weight: bold;
+    height: 60px;
+}
+.tabs .indicator{
+    background-color: #B2FF59;
+}
+
+td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 3px;
+}
+
+th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.condensed td{
+    padding: 2px !important
+}
+
+.chip img{
+    margin-right: 0px;
+}

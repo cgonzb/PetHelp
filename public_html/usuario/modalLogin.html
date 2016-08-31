@@ -1,0 +1,36 @@
+<!-- Modal Structure -->
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
+        <h4>Login</h4>
+        <div class='row'>
+            <div class="input-field col s6 m6">
+                <input  id="usuario" type="text" class="validate">
+                <label for="usuario">Usuario</label>
+            </div>
+            <div class="input-field col s6 m6">
+                <input  id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id='login' class=" modal-action modal-close waves-effect waves-green btn">Ingresar</button>
+    </div>
+</div>
+<script>
+    $('#login').on('click', function () {
+        $.ajax({
+            url: 'ajax/login.php',
+            data: {'usuario': $('#usuario').val(), 'password': $('#password').val()},
+            type: 'POST',
+            async: false,
+            success: function (output) {
+                if (output == 1) {
+                    window.location.replace('index.php');
+                }else{
+                    Materialize.toast('Usuario o Password incorrectos!!', 4000)
+                }
+            }//success
+        });//ajax
+    });//on Click
+</script>
